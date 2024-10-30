@@ -72,7 +72,7 @@ const Header = () => {
                             {
                                 navLinks.map(({ url, name }, i) => {
                                     return <li>
-                                        <span className="text-primary-500 font-sfmono font-extralight pr-1 text-3xl lg:text-[13px]">0{i + 1}</span>
+                                        <span key={i} className="text-primary-500 font-sfmono font-extralight pr-1 text-3xl lg:text-[13px]">0{i + 1}</span>
 
                                         <Link
                                             onClick={clickMenu}

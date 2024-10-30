@@ -15,9 +15,9 @@ const Experience = () => {
     </div>
 
     {
-      experiences.map((items, i) => {
-        return <div className='lg:flex justify-start gap-10'>
-
+      experiences.map((items, index) => {
+        
+        return <div key={index} className='lg:flex justify-start gap-10'>
           <div className='pl-8 pb-10 lg:w-[100%] border-l-[1px] border-background-500 dark:border-background-100 border-opacity-50 relative'>
             <div className="sticky top-32 -ml-12 bg-primary-500 w-8 h-8 rounded-full flex justify-center items-center">
               {items.type == 'edu' ? <FaGraduationCap /> : <MdBusinessCenter />}

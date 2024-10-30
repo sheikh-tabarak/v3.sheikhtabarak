@@ -51,8 +51,8 @@ const Testimonials = ({ testimonials }) => {
           </div>
 
           <Carousel arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />} swipeable={true} autoPlay={true} autoPlaySpeed={10000} responsive={responsive}>
-            {testimonials && testimonials.map((testimonial) => {
-              return <div className="flex flex-grow pr-6 w-full cursor-pointer h-[450px] lg:h-[360px]">
+            {testimonials && testimonials.map((testimonial,index) => {
+              return <div key={index} className="flex flex-grow pr-6 w-full cursor-pointer h-[450px] lg:h-[360px]">
                 <div className="relative h-full  p-8 rounded-lg bg-background-400 border-[1px] border-background-200">
                   <FaQuoteLeft className=" top-4 opacity-45 left-4 block w-8 h-8 text-primary-200 mb-4 rotate-180" />
                   <div className=" top-4 absolute right-4 block w-8 h-8 text-primary-200 mb-4">

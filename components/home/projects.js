@@ -1,30 +1,8 @@
 // import { featuredProjects } from '@/config';
 import React from 'react'
 import { BsLink45Deg } from 'react-icons/bs';
-import Carousel from 'react-multi-carousel';
 
-
-const Projects = ({ featuredProjects, wordpressProjects }) => {
-
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 7
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 4
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 3
-    }
-  };
-
+const Projects = ({ featuredProjects }) => {
 
 
   return <div id='projects' className='lg:py-32 md:py-10 '>
@@ -35,13 +13,13 @@ const Projects = ({ featuredProjects, wordpressProjects }) => {
       </h1>
     </div>
 
-    {featuredProjects.map((items, i) => {
-      return <div className='lg:flex justify-start gap-10'>
+    {featuredProjects.map((items, index) => {
+      return <div key={index} className='lg:flex justify-start gap-10'>
         <div className='lg:w-[100%] relative'>
           <div className='lg:flex items-center  font-poppins  gap-8 text-sm lg:text-base h-full bg-background-400 bg-opacity-70 hover:bg-opacity-100 cursor-pointer duration-500 p-8 leading-relaxed rounded-lg text-background-100'>
             <a target='_blank' href={items.linktoorg} className='lg:w-2/5 p-2 flex lg:sticky lg:top-32 mb-6 lg:mb-8 hover:scale-[1.03] duration-300 border-background-300 border-[1px] rounded-lg' ><img className='w-full' src={items.img} alt="" /></a>
             <div className='lg:w-3/5'>
-              <h2 className='text-white font-semibold pb-2 text-lg'> {items.title} · <a target='_blank' href={items.linktoorg}>{items.org} </a></h2>
+              <h2 className='text-white font-semibold pb-2 text-lg'> {items.title} &middot; <a target="_blank" rel="noopener noreferrer" href={items.linktoorg}>{items.org} </a></h2>
               <div className='text-slate-400 pb-2 flex items-center'>{items.from && items.to && <span className='pr-4'>{items.from} - {items.to}</span>} {items.mode && <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">{items.mode}</span>}</div>
               <p>{items.intro}</p>
 
@@ -59,9 +37,7 @@ const Projects = ({ featuredProjects, wordpressProjects }) => {
             </div>
           </div>
         </div>
-
       </div>
-
     })
     }
   </div>

@@ -12,9 +12,7 @@ const SocialIcons = ({ socialLinks }) => {
     <>
       <div className="leading-10 w-full flex justify-between lg:w-auto lg:order-1  lg:fixed lg:bottom-0 lg:left-8 ">
         <ul className="pt-4 flex justify-evenly w-full lg:block  ">
-
-          {/* <Link href={social.url} target="blank"> */}
-
+          
           <a target='_blank' href={socialLinks?.upwork.url}>
             <li className="py-3">
               <SiUpwork className="h-8 w-8 lg:h-6 lg:w-6  fill-background-500 dark:fill-background-100 hover:fill-primary-500 dark:hover:fill-primary-500  hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-175" />

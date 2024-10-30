@@ -34,15 +34,12 @@ export default function Home({ profile }) {
             <feBlend in='SourceGraphic' mode='multiply' />
           </filter>
         </svg>
-        {/* <div  id='top'> */}
         <Header />
-        {/* </div> */}
         <div className="px-10  lg:px-36 lg:py-12 md:px-36 md:py-12">
 
           <HeroSection about={profile.about} />
           <Testimonials testimonials={profile.testimonials} />
           <AboutSection about={profile.about} socialMedia={profile.socialMedia} skills={profile.skills} />
-          {/* <FeaturedProjects projects={profile.featuredProjects}/> */}
           <Projects featuredProjects={profile.featuredProjects} wordpressProjects={profile.wordpressProjects} />
           <Experience />
           <SocialIcons socialLinks={profile.socialMedia} />

@@ -75,7 +75,6 @@ const AboutSection = ({ about, socialMedia, skills }) => {
 
             </div>
 
-            {/* </div> */}
           </div>
         </div>
 
@@ -101,38 +100,29 @@ const AboutSection = ({ about, socialMedia, skills }) => {
           </div>
           <hr className='w-2/5 lg:w-4/5 border-background-500  dark:border-gray-700' />
         </div>
-        {/* <div className='relative flex items-center'> */}
-        {/* <ul className="flex "> */}
+      
         <Carousel arrows={false} swipeable={true} autoPlay={true} autoPlaySpeed={6000} responsive={responsive}>
           {skills?.web.map((value, index) => {
-            // if (value.type == 'web') {
             return (
-              <li title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} in ${value.type} development`} key={index} className="my-2 cursor-pointer bg-background-100 dark:bg-background-500 hover:scale-[1.02] ml-2 duration-500 ease-in-out hover:ease-in-out relative align-middle rounded-lg border-[1px] border-background-500 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 w-[100px] lg:w-[120px] text-center px-2 lg:px-4 py-6">
+              <li key={index} title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} in ${value.type} development`} className="my-2 cursor-pointer bg-background-100 dark:bg-background-500 hover:scale-[1.02] ml-2 duration-500 ease-in-out hover:ease-in-out relative align-middle rounded-lg border-[1px] border-background-500 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 w-[100px] lg:w-[120px] text-center px-2 lg:px-4 py-6">
                 <div className=' flex justify-center items-center'>
                   <img className='w-[30px] lg:w-[50px]' src={`skills/${value.image}`} alt="" />
                 </div>
                 <div className=' leading-10'> {value.title}</div>
                 <div className='text-sm lg:text-base'>{today.getFullYear() - value.since} Years </div>
-                {/* <div className='text-lg'><span className='text-primary-500'>···</span>··</div> */}
                 <p className='text-[8px] leading-[14px]'> Since {value.since}  </p>
               </li>
             )
-            // }
           })}
         </Carousel>
-        {/* </ul> */}
-
-        {/* </div> */}
-
 
         <div className='pt-8 pb-6  relative flex items-center border-[1px] border-gray-700 mt-10 rounded-lg'>
           <div className='absolute -top-3 left-4 bg-background-100 dark:bg-background-500 px-2  text-primary-500 font-sfmono dark:font-normal font-bold text-center md:text-left lg:text-left text-sm'>Also Experienced with</div>
           <ul className="flex flex-wrap lg:flex lg:flex-nowrap justify-evenly lg:justify-between items-center w-full font-sfmono text-[13px] leading-8 text-[#8892B0] rounded-[5px]">
 
             {skills?.others.map((value, index) => {
-              // if (value.type == 'cms' || value.type == 'mobile' || value.type == 'backend' || value.type == 'design' || value.type == 'database') {
               return (
-                <li title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} for ${value.type}`} key={index} className="py-8 cursor-pointer hover:scale-[1.07] hover:transition ease-in-out hover:ease-in-out hover:delay-75 relative align-middle  w-[120px] text-center ">
+                <li key={index} title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} for ${value.type}`} className="py-8 cursor-pointer hover:scale-[1.07] hover:transition ease-in-out hover:ease-in-out hover:delay-75 relative align-middle  w-[120px] text-center ">
 
                   <div className=' flex justify-center items-center'>
                     <img width={50} src={`skills/${value.image}`} alt="" />
@@ -143,7 +133,6 @@ const AboutSection = ({ about, socialMedia, skills }) => {
                 </li>
 
               );
-              // }
             })}
 
           </ul>
@@ -151,7 +140,6 @@ const AboutSection = ({ about, socialMedia, skills }) => {
         </div>
 
       </div>
-      {/* <span id="jobs"></span> */}
     </section>
   )
 }
