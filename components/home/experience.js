@@ -16,14 +16,14 @@ const Experience = () => {
 
     {
       experiences.map((items, index) => {
-        
+
         return <div key={index} className='lg:flex justify-start gap-10'>
           <div className='pl-8 pb-10 lg:w-[100%] border-l-[1px] border-background-500 dark:border-background-100 border-opacity-50 relative'>
             <div className="sticky top-32 -ml-12 bg-primary-500 w-8 h-8 rounded-full flex justify-center items-center">
               {items.type == 'edu' ? <FaGraduationCap /> : <MdBusinessCenter />}
             </div>
             <div className='timeline01 font-poppins text-sm lg:text-base bg-background-400 bg-opacity-70 hover:bg-opacity-100 cursor-pointer duration-500 p-8 leading-relaxed rounded-lg text-background-100'>
-              <h2 className='text-white font-semibold pb-2 text-lg'> {items.title} · <a target='_blank' href={items.linktoorg}>{items.org} </a></h2>
+              <h2 className='text-white font-semibold pb-2 text-lg'> {items.title} &middot; <a target='_blank' href={items.linktoorg}>{items.org} </a></h2>
               <div className='text-slate-400 pb-2 flex items-center'>{items.from} - {items.to} <span className="ml-4 flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">{items.mode}</span></div>
               <p>{items.intro}</p>
 

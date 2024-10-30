@@ -9,6 +9,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useTheme } from "next-themes";
 import { IoClose, IoCloseSharp } from 'react-icons/io5';
+import Image from 'next/image';
 
 const Header = () => {
     const { theme, setTheme } = useTheme()
@@ -37,9 +38,18 @@ const Header = () => {
 
 
 
-                    <img onClick={scrollToTop}
+                    {/* <img onClick={scrollToTop}
                         src='logoicon.png' className="cursor-pointer h-16 lg:h-20 hover:-translate-x-2 hover:transition hover:ease-in-out"
                         alt="Sheikh Tabarak Logo"
+                    /> */}
+                    <Image
+                        onClick={scrollToTop}
+                        src='/logoicon.png' // Use a leading slash for the path
+                        className="cursor-pointer hover:-translate-x-2 hover:transition hover:ease-in-out"
+                        alt="Muhammad Tabarak Logo"
+                        width={64} // Set the width (e.g., 64px)
+                        height={64} // Set the height (e.g., 64px)
+                        layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
                     />
 
                     <div className='flex items-center'>
@@ -71,8 +81,8 @@ const Header = () => {
                         <ul className="flex text-left flex-col gap-5 lg:gap-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
                             {
                                 navLinks.map(({ url, name }, i) => {
-                                    return <li>
-                                        <span key={i} className="text-primary-500 font-sfmono font-extralight pr-1 text-3xl lg:text-[13px]">0{i + 1}</span>
+                                    return <li key={i}>
+                                        <span className="text-primary-500 font-sfmono font-extralight pr-1 text-3xl lg:text-[13px]">0{i + 1}</span>
 
                                         <Link
                                             onClick={clickMenu}

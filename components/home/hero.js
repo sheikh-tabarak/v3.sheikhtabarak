@@ -5,17 +5,28 @@ import { TfiAngleDown } from "react-icons/tfi";
 import { Link } from 'react-scroll';
 
 import Shapes from '../hero-shapes/shapes';
+import Image from 'next/image';
 
 const HeroSection = ({ about }) => {
   return (
     <div  >
       <div className='py-4 relative' >
         <div className="flex justify-center lg:mt-4 lg:col-span-5 lg:hidden align-middle pt-4">
-          <img
+
+          <Image
+            src={`/sheikhtabarak.png`}// Use a leading slash for the path
+            className="motion-safe:animate-fadeIn rounded-lg w-60"
+            alt='Muhammad Tabarak'
+            width={240} // Set the width (e.g., 64px)
+            height={240} // Set the height (e.g., 64px)
+            layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+          />
+          {/* <img
             className="motion-safe:animate-fadeIn rounded-lg w-60"
             src={'sheikhtabarak.png'}
             alt="mockup"
-          />      </div>
+          />      */}
+        </div>
 
         <div className='flex gap-4 '>
 

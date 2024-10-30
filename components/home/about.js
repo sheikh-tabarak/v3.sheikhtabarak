@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect } from 'react'
 // import { skills, about, socialMedia } from '@/config';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -45,7 +46,16 @@ const AboutSection = ({ about, socialMedia, skills }) => {
             <div className='flex flex-col lg:flex-row  w-full gap-4 lg:pr-12 pb-4'>
 
               <a target='_blank' href={socialMedia.upwork.url} className='relative bg-background-500 border-slate-500 border-[1px] hover:scale-[.96] duration-500 cursor-pointer p-[9px] gap-2 rounded-lg flex w-full font-poppins justify-left items-center text-background-500'>
-                <img className='p-[3px] rounded-lg h-12' src={'/testimonials/upwork.png'} alt="" />
+                <Image
+                  // onClick={scrollToTop}
+                  src='/testimonials/upwork.png' // Use a leading slash for the path
+                  className="p-[3px] rounded-lg"
+                  alt="Upwork Logo"
+                  width={48} // Set the width (e.g., 64px)
+                  height={48} // Set the height (e.g., 64px)
+                  layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                />
+                {/* <img className='p-[3px] rounded-lg h-12' src={'/testimonials/upwork.png'} alt="" /> */}
                 <div>
                   <FaExternalLinkAlt className='absolute top-2 right-2 text-[9px] text-slate-400 opacity-55' />
                   <div className='text-sm font-semibold text-background-100'>Top Rated Developer.&nbsp;&nbsp; </div>
@@ -54,7 +64,17 @@ const AboutSection = ({ about, socialMedia, skills }) => {
               </a>
 
               <a target='_blank' href={socialMedia.fiverr.url} className='relative bg-background-500 border-slate-500 border-[1px] hover:scale-[.96] duration-500 cursor-pointer p-[9px] gap-2 rounded-lg flex w-full  font-poppins justify-left items-center text-background-500'>
-                <img className='p-[3px] rounded-lg h-12' src={'/testimonials/fiverr.jpg'} alt="" />
+
+                <Image
+                  // onClick={scrollToTop}
+                  src='/testimonials/fiverr.jpg' // Use a leading slash for the path
+                  className="p-[3px] rounded-lg"
+                  alt="Fiverr Logo"
+                  width={48} // Set the width (e.g., 64px)
+                  height={48} // Set the height (e.g., 64px)
+                  layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                />
+                {/* <img className='p-[3px] rounded-lg h-12' src={'/testimonials/fiverr.jpg'} alt="" /> */}
                 <div >
                   <FaExternalLinkAlt className='absolute top-2 right-2 text-[9px] text-slate-400 opacity-55' />
                   <div className='text-sm font-semibold text-background-100'>Level Two Developer.&nbsp;&nbsp; </div>
@@ -65,7 +85,16 @@ const AboutSection = ({ about, socialMedia, skills }) => {
             </div>
             <div className='lg:flex w-full gap-4 lg:pr-12'>
               <a target='_blank' href={socialMedia.linkedin.url} className='relative bg-background-500 border-slate-500 border-[1px] hover:scale-[.96] duration-500 cursor-pointer p-[9px] gap-2  rounded-lg flex w-full  font-poppins justify-left items-center text-background-500'>
-                <img className='p-[3px] rounded-lg h-12' src={'/testimonials/linkedin.svg'} alt="" />
+                <Image
+                  // onClick={scrollToTop}
+                  src='/testimonials/linkedin.svg' // Use a leading slash for the path
+                  className="p-[3px] rounded-lg"
+                  alt="Linkedin Logo"
+                  width={48} // Set the width (e.g., 64px)
+                  height={48} // Set the height (e.g., 64px)
+                  layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                />
+                {/* <img className='p-[3px] rounded-lg h-12' src={'/testimonials/linkedin.svg'} alt="" /> */}
                 <div>
                   <FaExternalLinkAlt className='absolute top-2 right-2 text-[9px] text-slate-400 opacity-55' />
                   <div className='text-sm font-semibold text-background-100'>Top Voice in Web development</div>
@@ -79,10 +108,19 @@ const AboutSection = ({ about, socialMedia, skills }) => {
         </div>
 
         <div className="hidden lg:mt-0 lg:col-span-5 lg:block align-middle">
-          <img
+          {/* <img
             className="motion-safe:animate-fadeIn rounded-lg w-80"
             src={'sheikhtabarak.png'}
             alt="sheikhtabarak"
+          /> */}
+
+          <Image
+            src='/sheikhtabarak.png' // Use a leading slash for the path
+            className="motion-safe:animate-fadeIn rounded-lg w-80"
+            alt="sheikhtabarak"
+            width={320} // Set the width (e.g., 64px)
+            height={320} // Set the height (e.g., 64px)
+            layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
           />
         </div>
       </div>
@@ -100,13 +138,21 @@ const AboutSection = ({ about, socialMedia, skills }) => {
           </div>
           <hr className='w-2/5 lg:w-4/5 border-background-500  dark:border-gray-700' />
         </div>
-      
+
         <Carousel arrows={false} swipeable={true} autoPlay={true} autoPlaySpeed={6000} responsive={responsive}>
           {skills?.web.map((value, index) => {
             return (
               <li key={index} title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} in ${value.type} development`} className="my-2 cursor-pointer bg-background-100 dark:bg-background-500 hover:scale-[1.02] ml-2 duration-500 ease-in-out hover:ease-in-out relative align-middle rounded-lg border-[1px] border-background-500 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 w-[100px] lg:w-[120px] text-center px-2 lg:px-4 py-6">
                 <div className=' flex justify-center items-center'>
-                  <img className='w-[30px] lg:w-[50px]' src={`skills/${value.image}`} alt="" />
+                  <Image
+                    src={`/skills/${value.image}`} // Use a leading slash for the path
+                    className="motion-safe:animate-fadeIn rounded-lg "
+                    alt={value.title}
+                    width={50} // Set the width (e.g., 64px)
+                    height={50} // Set the height (e.g., 64px)
+                    layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                  />
+                  {/* <img className='w-[30px] lg:w-[50px]' src={`skills/${value.image}`} alt="" /> */}
                 </div>
                 <div className=' leading-10'> {value.title}</div>
                 <div className='text-sm lg:text-base'>{today.getFullYear() - value.since} Years </div>
@@ -122,10 +168,23 @@ const AboutSection = ({ about, socialMedia, skills }) => {
 
             {skills?.others.map((value, index) => {
               return (
-                <li key={index} title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} for ${value.type}`} className="py-8 cursor-pointer hover:scale-[1.07] hover:transition ease-in-out hover:ease-in-out hover:delay-75 relative align-middle  w-[120px] text-center ">
+                <li
+                  key={index}
+                  title={`${today.getFullYear() - value.since} Year(s) of experience using ${value.title} for ${value.type}`}
+                  className="py-8 cursor-pointer hover:scale-[1.07] relative align-middle duration-500 w-[120px] text-center ">
 
                   <div className=' flex justify-center items-center'>
-                    <img width={50} src={`skills/${value.image}`} alt="" />
+
+                    <Image
+                      src={`/skills/${value.image}`}// Use a leading slash for the path
+                      className="motion-safe:animate-fadeIn rounded-lg"
+                      alt={value.title}
+                      width={50} // Set the width (e.g., 64px)
+                      height={50} // Set the height (e.g., 64px)
+                      layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                    />
+
+                    {/* <img width={50} src={`skills/${value.image}`} alt="" /> */}
                   </div>
                   <div className='leading-10'> {value.title}</div>
                   <p className='text-[8px] leading-[14px]'> {today.getFullYear() - value.since} Year(s)</p>
