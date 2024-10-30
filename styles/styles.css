@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'SF Mono Heavy Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Heavy Italic'), url('fonts/SFMonoRegular.woff') format('woff');
+}
