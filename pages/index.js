@@ -8,7 +8,6 @@ import AboutSection from '@/components/home/about'
 import Experience from '@/components/home/experience'
 import Head from "next/head";
 import Testimonials from "@/components/testimonials";
-import FeaturedProjects from "@/components/work";
 import Projects from "@/components/home/projects";
 
 export async function getServerSideProps() {
@@ -18,7 +17,7 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ profile }) {
-  
+
   return (
     <div className="scroll-smooth bg-background-100 dark:bg-background-500 select-none">
       <Head>
