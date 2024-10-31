@@ -6,7 +6,7 @@ import { MdBusinessCenter } from "react-icons/md";
 
 
 const Experience = () => {
-  return <div id='jobs' className='lg:py-32 md:py-10'>
+  return <div id='jobs' className='py-12 lg:py-32 md:py-10'>
     <div className="flex">
       <h1 className="col font-sfmono text-primary-500 text-[22px] ">05.</h1>
       <h1 className="col text-[20px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">

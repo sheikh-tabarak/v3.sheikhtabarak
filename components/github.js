@@ -9,8 +9,8 @@ const Github = ({ about }) => {
   };
 
   return (
-    <div className="hidden lg:flex lg:justify-center text-xs font-sfmono font-medium leading-5 text-primary-500 dark:text-teal-200 " >
-      <div className="w-[110px] lg:w-[610px]">
+    <div className=" lg:flex lg:justify-center w-full overflow-x-scroll text-xs font-sfmono font-medium leading-5 text-primary-500 dark:text-teal-200 " >
+      <div className="w-full lg:w-[610px]">
         <GitHubCalendar
           theme={theme}
           blockSize={7.5} blockRadius={1}

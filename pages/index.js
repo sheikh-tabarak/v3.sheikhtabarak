@@ -31,7 +31,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 export default function Home() {
 
   // module.exports = {
-const profile = {
+  const profile = {
     about: {
       name: 'Muhammad Tabarak',
       headline: 'I build things for web',
@@ -394,32 +394,32 @@ const profile = {
     ]
 
   }
-    // featuredProjects: [
-    //   {
-    //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/52fc32b4a8f7fc0f73740c772c451fd6-1725497918871/Copy%20of%20Fiverr%20Portfolio%20%20Websites%20(3).gif',
-    //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjZkOGY0ZWMyYTY2ZTQwMDAxNzQzOGNm',
-    //     github: 'https://github.com/sheikh-tabarak/jewellery_store_dashboard',
-    //     position: 'left-top'
-    //   },
-    //   {
-    //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/31a559f0f34c8925948067c7b877ea8e-1725495852523/_Revenue%20Analysis%20Page%20Real-time%20display%20of%20total%20orders%20and%20sales%20(revenue).%20Interactive%20charts%20for%20revenue%20trends%20and%20comparisons.%20Filter%20revenue%20data%20by%20product%20categories.%20Interactive%20charts%20t%20(1).png',
-    //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY2NzY5ODhlZjQ2YzAwMDAxZjM2ZTFi',
-    //     github: 'https://github.com/sheikh-tabarak/mern-ecommercekit',
-    //     position: 'center'
-    //   },
-    //   {
-    //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/97cd4f41deaa926e959ae2b8a94a44dc-1696463188498/spothub.png',
-    //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjM4Mjc0YTdkZjhiZTcwMDAxZTg4YTAy',
-    //     github: 'https://github.com/sheikh-tabarak/spot_hub',
-    //     position: 'center-left',
-    //   },
-    //   {
-    //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/b6410817453c1790b9bbf85e71cc367c-1719587685969/Comfort%20Traders%20(1).png',
-    //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY3ZWQzZWQzMmRlMjgwMDAxNWY1MjFl',
-    //     github: '#',
-    //     position: 'center-top',
-    //   }
-    // ]
+  // featuredProjects: [
+  //   {
+  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/52fc32b4a8f7fc0f73740c772c451fd6-1725497918871/Copy%20of%20Fiverr%20Portfolio%20%20Websites%20(3).gif',
+  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjZkOGY0ZWMyYTY2ZTQwMDAxNzQzOGNm',
+  //     github: 'https://github.com/sheikh-tabarak/jewellery_store_dashboard',
+  //     position: 'left-top'
+  //   },
+  //   {
+  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/31a559f0f34c8925948067c7b877ea8e-1725495852523/_Revenue%20Analysis%20Page%20Real-time%20display%20of%20total%20orders%20and%20sales%20(revenue).%20Interactive%20charts%20for%20revenue%20trends%20and%20comparisons.%20Filter%20revenue%20data%20by%20product%20categories.%20Interactive%20charts%20t%20(1).png',
+  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY2NzY5ODhlZjQ2YzAwMDAxZjM2ZTFi',
+  //     github: 'https://github.com/sheikh-tabarak/mern-ecommercekit',
+  //     position: 'center'
+  //   },
+  //   {
+  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/97cd4f41deaa926e959ae2b8a94a44dc-1696463188498/spothub.png',
+  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjM4Mjc0YTdkZjhiZTcwMDAxZTg4YTAy',
+  //     github: 'https://github.com/sheikh-tabarak/spot_hub',
+  //     position: 'center-left',
+  //   },
+  //   {
+  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/b6410817453c1790b9bbf85e71cc367c-1719587685969/Comfort%20Traders%20(1).png',
+  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY3ZWQzZWQzMmRlMjgwMDAxNWY1MjFl',
+  //     github: '#',
+  //     position: 'center-top',
+  //   }
+  // ]
   // };
 
   return (
