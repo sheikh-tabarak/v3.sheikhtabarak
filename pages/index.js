@@ -11,10 +11,20 @@ import Testimonials from "@/components/testimonials";
 import Projects from "@/components/home/projects";
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/portfolio/')
+  const res = await fetch('https://v3sheikhtabarak.vercel.app/api/portfolio')
   const portfolio = await res.json()
+  
+  if (!res.ok) {
+    console.error('Failed to fetch data:', portfolio);
+    return {
+      notFound: true, // or handle the error as you see fit
+    };
+  }
+  
   return { props: { profile: portfolio } }
 }
+
+
 
 export default function Home({ profile }) {
 
