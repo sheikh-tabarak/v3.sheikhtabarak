@@ -43,10 +43,10 @@ const Testimonials = ({ testimonials }) => {
           <div className='lg:flex w-full justify-between py-4 relative'>
 
             <div className="flex">
-              <h1 className="col font-sfmono text-primary-500 text-[22px] ">01.</h1>
-              <h1 className="col text-[22px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
+              <h3 className="col font-sfmono text-primary-500 text-[22px] ">01.</h3>
+              <h3 className="col text-[22px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
                 Client Kudos: Real Stories, Real Results!
-              </h1>
+              </h3>
             </div>
           </div>
 

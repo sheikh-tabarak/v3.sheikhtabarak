@@ -1,0 +1,16 @@
+{
+   "name": "Muhammad Tabarak - Web Developer Portfolio",
+   "short_name": "Muhammad Tabarak",
+   "description": "Explore the portfolio of Muhammad Tabarak, a software engineer with over 4 years of experience working as a Full-stack developer, building scalable and efficient solutions. Check out my latest projects and services!",
+   "start_url": "/",
+   "icons": [
+      {
+         "src": "/android-chrome-192x192.png",
+         "sizes": "192x192",
+         "type": "image/png"
+      }
+   ],
+   "theme_color": "#4DD583",
+   "background_color": "#0A192F",
+   "display": "standalone"
+}

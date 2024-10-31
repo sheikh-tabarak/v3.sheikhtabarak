@@ -19,11 +19,7 @@ const HeroSection = ({ about }) => {
             height={240} // Set the height (e.g., 64px)
             layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
           />
-          {/* <img
-            className="motion-safe:animate-fadeIn rounded-lg w-60"
-            src={'sheikhtabarak.png'}
-            alt="mockup"
-          />      */}
+      
         </div>
 
         <div className='flex gap-4 '>
@@ -38,9 +34,9 @@ const HeroSection = ({ about }) => {
               {about?.name}
             </h1>
 
-            <h1 className="font-poppins text-2xl lg:text-4xl md:text-left lg:text-left  text-primary-500 opacity-90 font-bold text-center ">
+            <h2 className="font-poppins text-2xl lg:text-4xl md:text-left lg:text-left  text-primary-500 opacity-90 font-bold text-center ">
               {about?.headline}
-            </h1>
+            </h2>
 
             <p className="font-poppins py-2 text-[14px] lg:pr-12  text-slate-400 md:text-[24px] lg:text-[18px] text-center md:text-left lg:text-left">
               A software engineer with over <span className='font-semibold text-background-100'> 4 years of experience </span> working as a  <span className='font-semibold text-background-100'>Full-stack developer</span>, building scalable and efficient solutions.

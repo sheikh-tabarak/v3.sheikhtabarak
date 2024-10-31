@@ -6,10 +6,10 @@ const Projects = ({ featuredProjects }) => {
 
   return <div id='projects' className='lg:py-32 md:py-10'>
     <div className='flex'>
-      <h1 className='col font-sfmono text-primary-500 text-[22px]'>05.</h1>
-      <h1 className='col text-[20px] leading-8 font-bold mb-6  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]'>
+      <h3 className='col font-sfmono text-primary-500 text-[22px]'>05.</h3>
+      <h3 className='col text-[20px] leading-8 font-bold mb-6  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]'>
         List of best things I have done
-      </h1>
+      </h3>
     </div>
 
     {featuredProjects.map((items, index) => {
@@ -17,7 +17,7 @@ const Projects = ({ featuredProjects }) => {
         <div className='lg:w-[100%] relative'>
           <div className='lg:flex items-center  font-poppins  gap-8 text-sm lg:text-base h-full bg-background-400 bg-opacity-70 hover:bg-opacity-100 cursor-pointer duration-500 p-8 leading-relaxed rounded-lg text-background-100'>
             <a target='_blank' href={items.linktoorg} className='lg:w-2/5 p-2 flex lg:sticky lg:top-32 mb-6 lg:mb-8 hover:scale-[1.03] duration-300 border-background-300 border-[1px] rounded-lg' >
-              <img className='w-full' src={items.img} alt="" />
+              <img className='w-full' src={items.img} alt= {items.title}  />
             </a>
             <div className='lg:w-3/5'>
               <h2 className='text-white font-semibold pb-2 text-lg'>

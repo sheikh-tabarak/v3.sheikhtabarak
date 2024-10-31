@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import Head from "next/head";
 
+import SchemaMarkup from '@/public/SchemaMarkup';
 const Header = dynamic(() => import('@/components/header'));
 const Footer = dynamic(() => import('@/components/footer'));
 const SocialIcons = dynamic(() => import('@/components/socialicons'));
@@ -12,25 +13,9 @@ const Projects = dynamic(() => import('@/components/home/projects'));
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 
-// export async function getServerSideProps() {
-//   const res = await fetch('https://v3sheikhtabarak.vercel.app/api/portfolio')
-//   const portfolio = await res.json()
-
-//   if (!res.ok) {
-//     console.error('Failed to fetch data:', portfolio);
-//     return {
-//       notFound: true, // or handle the error as you see fit
-//     };
-//   }
-
-//   return { props: { profile: portfolio } }
-// }
-
-
 
 export default function Home() {
 
-  // module.exports = {
   const profile = {
     about: {
       name: 'Muhammad Tabarak',
@@ -394,41 +379,26 @@ export default function Home() {
     ]
 
   }
-  // featuredProjects: [
-  //   {
-  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/52fc32b4a8f7fc0f73740c772c451fd6-1725497918871/Copy%20of%20Fiverr%20Portfolio%20%20Websites%20(3).gif',
-  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjZkOGY0ZWMyYTY2ZTQwMDAxNzQzOGNm',
-  //     github: 'https://github.com/sheikh-tabarak/jewellery_store_dashboard',
-  //     position: 'left-top'
-  //   },
-  //   {
-  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/31a559f0f34c8925948067c7b877ea8e-1725495852523/_Revenue%20Analysis%20Page%20Real-time%20display%20of%20total%20orders%20and%20sales%20(revenue).%20Interactive%20charts%20for%20revenue%20trends%20and%20comparisons.%20Filter%20revenue%20data%20by%20product%20categories.%20Interactive%20charts%20t%20(1).png',
-  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY2NzY5ODhlZjQ2YzAwMDAxZjM2ZTFi',
-  //     github: 'https://github.com/sheikh-tabarak/mern-ecommercekit',
-  //     position: 'center'
-  //   },
-  //   {
-  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/97cd4f41deaa926e959ae2b8a94a44dc-1696463188498/spothub.png',
-  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjM4Mjc0YTdkZjhiZTcwMDAxZTg4YTAy',
-  //     github: 'https://github.com/sheikh-tabarak/spot_hub',
-  //     position: 'center-left',
-  //   },
-  //   {
-  //     img: 'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/b6410817453c1790b9bbf85e71cc367c-1719587685969/Comfort%20Traders%20(1).png',
-  //     fiverrurl: 'https://www.fiverr.com/users/sheikhtabarak/portfolio/NjY3ZWQzZWQzMmRlMjgwMDAxNWY1MjFl',
-  //     github: '#',
-  //     position: 'center-top',
-  //   }
-  // ]
-  // };
-
   return (
     <div className="scroll-smooth bg-background-100 dark:bg-background-500 select-none">
       <Head>
-        <title>Muhammad Tabarak - Web Developer</title>
+        <title>Muhammad Tabarak - Top Rated Software Engineer</title>
         <meta name="description" content={profile.about.herodesc} />
+        <Head>
+          <meta property="og:title" content="Muhammad Tabarak - Top Rated Web app developer" />
+          <meta property="og:description" content="Explore the portfolio of Muhammad Tabarak, a software engineer with over 4 years of experience working as a Full-stack developer, building scalable and efficient solutions. Check out my latest projects and services!" />
+          <meta property="og:url" content="https://sheikhtabarak.me/" />
+          <meta property="og:image" content="https://sheikhtabarak.me/_next/image?url=%2Flogoicon.png&w=128&q=75" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Muhammad Tabarak Portfolio" />
+          <link rel="canonical" href="https://sheikhtabarak.me/" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+        </Head>
       </Head>
-
+      <SchemaMarkup />
       <div id='home' className='scroll-smooth'>
         <svg width='0' height='0'>
           <filter id='grainy' x='0' y='0' width='100%' height='100%'>

@@ -31,10 +31,10 @@ const AboutSection = ({ about, socialMedia, skills }) => {
         <div className="w-full lg:w-2/3">
           <div className="">
             <div className="flex">
-              <h1 className="col font-sfmono text-primary-500 text-[22px] ">02.</h1>
-              <h1 className="col text-[22px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
+              <h3 className="col font-sfmono text-primary-500 text-[22px] ">02.</h3>
+              <h3 className="col text-[22px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
                 Here is more about me
-              </h1>
+              </h3>
             </div>
             <p className="text-[14px] tracking-wide font-poppins font-light lg:pr-24 text-slate-200 opacity-85 md:text-[14px] lg:text-[15px]">
               {about.aboutme}
@@ -126,10 +126,10 @@ const AboutSection = ({ about, socialMedia, skills }) => {
 
       <div id='techstack' className='pt-32'>
         <div className="flex">
-          <h1 className="col font-sfmono text-primary-500 text-[22px] ">03.</h1>
-          <h1 className="col text-[20px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
+          <h3 className="col font-sfmono text-primary-500 text-[22px] ">03.</h3>
+          <h3 className="col text-[20px] leading-8 font-bold mb-4  font-poppins text-background-500 dark:text-background-100 md:text-[40px] lg:text-[24px]">
             Tech Stack.
-          </h1>
+          </h3>
         </div>
         <div className='flex items-center gap-2 mb-5 w-full'>
           <div className="w-3/5 lg:w-1/5 text-primary-500 font-sfmono dark:font-normal font-bold text-center md:text-left lg:text-left text-sm ">
