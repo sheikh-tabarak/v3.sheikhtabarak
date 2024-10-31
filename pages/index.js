@@ -1,26 +1,28 @@
-import { useEffect } from "react";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-import SocialIcons from '@/components/socialicons'
-import HeroSection from '@/components/home/hero'
-import AboutSection from '@/components/home/about'
-import Experience from '@/components/home/experience'
+import dynamic from 'next/dynamic';
 import Head from "next/head";
-import Testimonials from "@/components/testimonials";
-import Projects from "@/components/home/projects";
+
+const Header = dynamic(() => import('@/components/header'));
+const Footer = dynamic(() => import('@/components/footer'));
+const SocialIcons = dynamic(() => import('@/components/socialicons'));
+const HeroSection = dynamic(() => import('@/components/home/hero'));
+const AboutSection = dynamic(() => import('@/components/home/about'));
+const Experience = dynamic(() => import('@/components/home/experience'));
+const Testimonials = dynamic(() => import('@/components/testimonials'));
+const Projects = dynamic(() => import('@/components/home/projects'));
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
 
 export async function getServerSideProps() {
   const res = await fetch('https://v3sheikhtabarak.vercel.app/api/portfolio')
   const portfolio = await res.json()
-  
+
   if (!res.ok) {
     console.error('Failed to fetch data:', portfolio);
     return {
       notFound: true, // or handle the error as you see fit
     };
   }
-  
+
   return { props: { profile: portfolio } }
 }
 

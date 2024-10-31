@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import React, { useEffect } from 'react'
-// import { skills, about, socialMedia } from '@/config';
+import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
 

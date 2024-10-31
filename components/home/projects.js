@@ -1,5 +1,3 @@
-// import { featuredProjects } from '@/config';
-import Image from 'next/image';
 import React from 'react'
 import { BsLink45Deg } from 'react-icons/bs';
 

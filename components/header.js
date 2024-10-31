@@ -1,14 +1,8 @@
-// import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
-import { CiDark, CiLight } from "react-icons/ci";
 import { navLinks } from '@/config';
 import { Link, animateScroll as scroll } from 'react-scroll';
-// import Link from 'next/link';
-
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useTheme } from "next-themes";
-import { IoClose, IoCloseSharp } from 'react-icons/io5';
 import Image from 'next/image';
 
 const Header = () => {

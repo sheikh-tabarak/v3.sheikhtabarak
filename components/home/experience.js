@@ -1,6 +1,6 @@
 import { experiences } from '@/config';
 import React from 'react'
-import { BsLink, BsLink45Deg } from 'react-icons/bs';
+import {  BsLink45Deg } from 'react-icons/bs';
 import { FaGraduationCap } from "react-icons/fa6";
 import { MdBusinessCenter } from "react-icons/md";
 

@@ -1,9 +1,7 @@
-import Link from 'next/link';
 import React from 'react'
 import { FaBehance, FaGithub, FaLinkedinIn, FaInstagram, FaFacebook } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { SiUpwork } from "react-icons/si";
-import { socialMedia } from '@/config';
 import { about } from '@/config';
 
 

@@ -1,6 +1,4 @@
 import React from 'react'
-import { BsArrowDownCircle } from "react-icons/bs";
-import { PiCaretDownLight } from "react-icons/pi";
 import { TfiAngleDown } from "react-icons/tfi";
 import { Link } from 'react-scroll';
 
