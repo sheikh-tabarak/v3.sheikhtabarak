@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "tailwind":"npx tailwindcss -i ./styles/input.css -o ./styles/tailwind.css --watch",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -16,6 +17,7 @@
     "cheerio": "^1.0.0",
     "framer-motion": "^11.5.4",
     "gsap": "^3.12.5",
+    "http-proxy-middleware": "^3.0.3",
     "next": "^14.2.14",
     "next-themes": "^0.2.1",
     "react": "^18.3.1",

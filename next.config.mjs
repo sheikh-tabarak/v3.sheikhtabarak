@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/blog/:path*', // Match any path under /blog
+        destination: '/api/blog/:path*', // Forward to the API route
+      },
+    ]
+  },
+
   // reactStrictMode: true,
   // // target: 'serverless',
   // experimental: {

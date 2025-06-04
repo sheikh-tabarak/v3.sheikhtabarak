@@ -29,23 +29,17 @@ const Header = () => {
                 className="rounded-lg bg-background-100 border-[1px] shadow-lg border-gray-300 dark:border-gray-700  px-4 lg:px-8 py-2  dark:bg-background-500 z-50"
             >
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-
-
-
-                    {/* <img onClick={scrollToTop}
-                        src='logoicon.png' className="cursor-pointer h-16 lg:h-20 hover:-translate-x-2 hover:transition hover:ease-in-out"
-                        alt="Sheikh Tabarak Logo"
-                    /> */}
-                    <Image
-                        onClick={scrollToTop}
-                        src='/logoicon.png' // Use a leading slash for the path
-                        className="cursor-pointer hover:-translate-x-2 hover:transition hover:ease-in-out"
-                        alt="Muhammad Tabarak Logo"
-                        width={64} // Set the width (e.g., 64px)
-                        height={64} // Set the height (e.g., 64px)
-                        layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
-                    />
-
+                    {/* <a href="/"> */}
+                        <Image
+                            onClick={scrollToTop}
+                            src='/logoicon.png' // Use a leading slash for the path
+                            className="cursor-pointer hover:-translate-x-2 hover:transition hover:ease-in-out"
+                            alt="Muhammad Tabarak Logo"
+                            width={64} // Set the width (e.g., 64px)
+                            height={64} // Set the height (e.g., 64px)
+                            layout="intrinsic" // Optional: use "responsive" or "fixed" based on your needs
+                        />
+                    {/* </a> */}
                     <div className='flex items-center'>
                         {/* <li className="lg:hidden flex items-center text-3xl">
                             <button className='text-background-100 hidden dark:flex' onClick={() => setTheme('light')}><CiLight /></button>
