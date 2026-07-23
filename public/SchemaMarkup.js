@@ -7,7 +7,7 @@ const SchemaMarkup = () => {
         "@type": "Person",
         "name": "Muhammad Tabarak",
         "jobTitle": "Top Rated Software Engineer",
-        "url": "https://sheikhtabarak.me",
+        "url": "https://www.sheikhtabarak.me",
         "image": "https://ugc.production.linktr.ee/b36f6acd-0b1c-4283-8542-5e2da6f9a39d_profile-pic--3-.png?io=true&size=avatar-v3_0",
         "description": "A software engineer with over 4 years of experience working as a Full-stack developer, building scalable and efficient solutions.",
         "telephone": "+923154706237",

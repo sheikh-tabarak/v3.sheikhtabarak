@@ -386,11 +386,11 @@ export default function Home() {
         <meta name="description" content={profile.about.herodesc} />
         <meta property="og:title" content="Muhammad Tabarak - Top Rated Web app developer" />
         <meta property="og:description" content="Explore the portfolio of Muhammad Tabarak, a software engineer with over 4 years of experience working as a Full-stack developer, building scalable and efficient solutions. Check out my latest projects and services!" />
-        <meta property="og:url" content="https://sheikhtabarak.me/" />
-        <meta property="og:image" content="https://sheikhtabarak.me/_next/image?url=%2Flogoicon.png&w=128&q=75" />
+        <meta property="og:url" content="https://www.sheikhtabarak.me/" />
+        <meta property="og:image" content="https://www.sheikhtabarak.me/_next/image?url=%2Flogoicon.png&w=128&q=75" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Third Version of Muhammad Tabarak's Portfolio" />
-        <link rel="canonical" href="https://sheikhtabarak.me/" />
+        <link rel="canonical" href="https://www.sheikhtabarak.me/" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
